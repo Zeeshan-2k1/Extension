@@ -1,0 +1,20 @@
+{
+  "name": "VWO Optimize",
+  "description": "Chrome Extension in React!",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "action": {
+    "default_title": "React Extension"
+  },
+  "permissions": ["activeTab", "scripting", "tabs", "webRequest"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["popup.html"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
